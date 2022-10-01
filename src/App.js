@@ -1,18 +1,7 @@
-import React from 'react';
-import './App.css';
-
-//importing components
-import Calculator from './components/Calculator';
-import IntroHeader from './components/IntroHeader';
-
+import React from "react";
 
 function App() {
-  return (
-    <React.Fragment>
-      <IntroHeader />
-      <Calculator />
-    </React.Fragment>
-  );
+  return <div></div>;
 }
 
 export default App;
