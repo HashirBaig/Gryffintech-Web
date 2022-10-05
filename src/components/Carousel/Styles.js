@@ -3,15 +3,16 @@ import styled from "styled-components"
 const COLORS = {
   LIGHT: "#f0f0f0",
   DARK: "rgb(40,40,40)",
+  DARKER: "rgb(20,20,20)",
 }
 
 export const StyledWrapper = styled.div`
   width: 100%;
-  height: 370px;
+  height: 450px;
   display: flex;
   justify-content: center;
-  // background: radial-gradient(closest-side, #c9c9c9, #f0f0f0);
-  background-color: ${COLORS.DARK};
+  background: radial-gradient(${COLORS.DARK}, ${COLORS.DARKER});
+  // background-color: ${COLORS.DARK};
 `
 export const StyledCarouselContainer = styled.div`
   height: auto;
