@@ -1,4 +1,4 @@
-export const servicesTree = [
+export const services = [
   { title: "Artifical Intelligence", link: "/", branches: null },
   { title: "IoT Solution Development", link: "/", branches: null },
   {
@@ -55,7 +55,7 @@ export const servicesTree = [
   { title: "Blockchain Development", link: "/", branches: null },
 ]
 
-export const hireDeveloperTree = [
+export const hireDeveloper = [
   { title: "Dedicated Developer", link: "/", branches: null },
   {
     title: "JS & Frontend",
@@ -133,8 +133,8 @@ export const hireDeveloperTree = [
 
 export const navMenu = [
   { label: "About Us", link: "/", tree: null },
-  { label: "Services", link: null, tree: [...servicesTree] },
-  { label: "Hire Developer", link: null, tree: [...hireDeveloperTree] },
+  { label: "Services", link: null, tree: [...services] },
+  { label: "Hire Developer", link: null, tree: [...hireDeveloper] },
   { label: "Contact", link: "/", tree: null },
   { label: "Career", link: "/", tree: null },
 ]
