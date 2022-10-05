@@ -1,0 +1,17 @@
+import styled from "styled-components"
+
+export const StyledHeader = styled.div`
+  width: 100%;
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0 3px 8px gray;
+`
+export const StyledLogo = styled.div`
+  font-weight: 800;
+  font-size: 24px;
+  margin-left: 20px;
+`
+export const StyledSpan = styled.span``
