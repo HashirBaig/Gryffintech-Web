@@ -3,6 +3,7 @@ import { StyledWrapper } from "./Styles"
 
 import Header from "../../components/layouts/home"
 import Carousel from "../../components/Carousel"
+import Services from "../../components/Services"
 
 function Landing() {
   return (
@@ -16,6 +17,7 @@ function Landing() {
     */}
       <Header />
       <Carousel />
+      <Services />
     </StyledWrapper>
   )
 }
