@@ -2,6 +2,7 @@ import React from "react"
 import { StyledWrapper } from "./Styles"
 
 import Header from "../../components/layouts/home"
+import Carousel from "../../components/Carousel"
 
 function Landing() {
   return (
@@ -14,6 +15,7 @@ function Landing() {
       - Footer
     */}
       <Header />
+      <Carousel />
     </StyledWrapper>
   )
 }
