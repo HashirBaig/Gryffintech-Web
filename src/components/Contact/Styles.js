@@ -1,17 +1,27 @@
 import styled from "styled-components"
 import { colors, font } from "../../const"
 
-export const StyledWrapper = styled.div`
+export const StyledContainer = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 40px 0px;
-  height: auto;
+  justify-content: space-evenly;
   background-color: white;
+  // border-top-left-radius: 20%;
+  // border-top-right-radius: 20%;
+  // border-bottom-left-radius: 20%;
+  // border-bottom-right-radius: 20%;
+`
+export const StyledWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  margin: 60px 0px;
 `
 export const StyledContactTextContainer = styled.div``
 export const StyledContactHeader = styled.h1`
   color: ${colors.darker};
-  font-size: ${font.size.xxl};
+  font-weight: 800;
+  font-size: 38px;
+`
+export const StyledContactParaContainer = styled.p`
+  margin: 40px 0px;
 `
 export const StyledContactParagraph = styled.p``
