@@ -1,7 +1,7 @@
 import React from "react"
 import { StyledWrapper, StyledContactTextContainer, StyledContactHeader, StyledContactParagraph } from "./Styles"
 
-import ContactForm from "../ContactForm"
+// import ContactForm from "../ContactForm"
 
 function Contact() {
   return (
