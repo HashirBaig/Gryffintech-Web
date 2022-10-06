@@ -4,6 +4,7 @@ import { StyledWrapper } from "./Styles"
 import Header from "../../components/layouts/home"
 import Carousel from "../../components/Carousel"
 import Services from "../../components/Services"
+import ContactForm from "../../components/ContactForm"
 
 function Landing() {
   return (
@@ -18,6 +19,7 @@ function Landing() {
       <Header />
       <Carousel />
       <Services />
+      <ContactForm />
     </StyledWrapper>
   )
 }
