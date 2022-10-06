@@ -3,7 +3,7 @@ import { colors, font } from "../../const"
 
 export const StyledWrapper = styled.div`
   width: 100%;
-  height: 450px;
+  height: 470px;
   display: flex;
   justify-content: center;
   background: radial-gradient(${colors.dark}, ${colors.darker});
@@ -46,4 +46,8 @@ export const StyledButton = styled.button`
     background-color: ${colors.dark};
     color: ${colors.light};
   }
+`
+export const StyledIcon = styled.i`
+  font-size: ${font.size.icon};
+  margin-left: 8px;
 `
