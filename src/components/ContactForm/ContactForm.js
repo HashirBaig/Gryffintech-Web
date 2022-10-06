@@ -1,6 +1,6 @@
 import React from "react"
 import { Formik } from "formik"
-import { StyledForm, StyledContainer, StyledField, StyledLabel, StyledButton, StyledButtonContainer } from "./Styles"
+import { StyledForm, StyledField, StyledLabel, StyledButton, StyledButtonContainer } from "./Styles"
 
 function ContactForm() {
   const onSubmit = values => {
