@@ -5,18 +5,16 @@ import Header from "../../components/layouts/home"
 import Carousel from "../../components/Carousel"
 import Services from "../../components/Services"
 import Contact from "../../components/Contact"
+import Footer from "../../components/layouts/footer"
 
 function Landing() {
   return (
     <StyledWrapper>
-      {/*
-      - Contact us form
-      - Footer
-    */}
       <Header />
       <Carousel />
       <Services />
       <Contact />
+      <Footer />
     </StyledWrapper>
   )
 }

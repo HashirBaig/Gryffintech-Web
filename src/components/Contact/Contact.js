@@ -15,7 +15,7 @@ function Contact() {
         <StyledContactParagraph>Gryffintech Islamabad</StyledContactParagraph>
         <StyledContactParagraph>hello@gryffintech.com</StyledContactParagraph>
       </StyledContactTextContainer>
-      <ContactForm />
+      {/* <ContactForm /> */}
     </StyledWrapper>
   )
 }
