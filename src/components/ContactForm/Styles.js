@@ -27,7 +27,7 @@ export const StyledField = styled(Field)`
   height: 40px;
   line-height: normal;
   outline: none;
-  border: none;
+  border: 2px solid ${colors.darker};
   border-radius: 4px;
   padding: 0px 10px;
   background-color: ${colors.light};

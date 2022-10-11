@@ -19,7 +19,7 @@ function Contact() {
           <StyledContactParaContainer>
             <StyledContactParagraph>We would love to hear about your project.</StyledContactParagraph>
             <StyledContactParagraph>
-              One of our specialist will reach out to you within next 2 hours.
+              One of our specialist will reach out to you within next 2 hours
             </StyledContactParagraph>
           </StyledContactParaContainer>
           <StyledContactParagraph>Gryffintech Islamabad</StyledContactParagraph>

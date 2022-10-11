@@ -4,7 +4,7 @@ import { colors } from "../../const"
 export const StyledContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
-  background-color: white;
+  // background-color: white;
   // border-top-left-radius: 20%;
   // border-top-right-radius: 20%;
   // border-bottom-left-radius: 20%;
@@ -15,9 +15,14 @@ export const StyledWrapper = styled.div`
   height: 100%;
   margin: 60px 0px;
 `
-export const StyledContactTextContainer = styled.div``
+export const StyledContactTextContainer = styled.div`
+  background-color: ${colors.dark};
+  color: ${colors.light};
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+`
 export const StyledContactHeader = styled.h1`
-  color: ${colors.darker};
   font-weight: 800;
   font-size: 38px;
 `
