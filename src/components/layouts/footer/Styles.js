@@ -11,8 +11,6 @@ export const StyledFooter = styled.div`
   justify-content: center;
 
   border-top: 1px solid ${colors.darker};
-  // border-top-left-radius: 50%;
-  // border-top-right-radius: 50%;
   color: ${colors.light};
   background-color: ${colors.darker};
 `

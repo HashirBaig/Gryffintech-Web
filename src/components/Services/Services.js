@@ -19,7 +19,7 @@ Services.defaultProps = {
   services: [
     {
       title: "Artifical Intelligence",
-      icon: "fas fa-cogs",
+      icon: "fas fa-head-side-virus",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nam unde! Molestiae iusto ipsum porro accusamus libero, eveniet quam ab, atque omnis, optio repudiandae modi rem. Quas ipsa a consequuntur!",
       link: "/",
@@ -28,7 +28,7 @@ Services.defaultProps = {
     {
       title: "IoT Solution Development",
 
-      icon: "fas fa-cogs",
+      icon: "fas fa-network-wired",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nam unde! Molestiae iusto ipsum porro accusamus libero, eveniet quam ab, atque omnis, optio repudiandae modi rem. Quas ipsa a consequuntur!",
 
@@ -36,35 +36,17 @@ Services.defaultProps = {
       branches: null,
     },
     {
-      title: "Artifical Intelligence",
-      icon: "fas fa-cogs",
+      title: "Enterprise Development",
+      icon: "fas fa-handshake",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nam unde! Molestiae iusto ipsum porro accusamus libero, eveniet quam ab, atque omnis, optio repudiandae modi rem. Quas ipsa a consequuntur!",
       link: "/",
       branches: null,
     },
     {
-      title: "IoT Solution Development",
+      title: "Cloud Services",
 
-      icon: "fas fa-cogs",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nam unde! Molestiae iusto ipsum porro accusamus libero, eveniet quam ab, atque omnis, optio repudiandae modi rem. Quas ipsa a consequuntur!",
-
-      link: "/",
-      branches: null,
-    },
-    {
-      title: "Artifical Intelligence",
-      icon: "fas fa-cogs",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nam unde! Molestiae iusto ipsum porro accusamus libero, eveniet quam ab, atque omnis, optio repudiandae modi rem. Quas ipsa a consequuntur!",
-      link: "/",
-      branches: null,
-    },
-    {
-      title: "IoT Solution Development",
-
-      icon: "fas fa-cogs",
+      icon: "fas fa-cloud",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nam unde! Molestiae iusto ipsum porro accusamus libero, eveniet quam ab, atque omnis, optio repudiandae modi rem. Quas ipsa a consequuntur!",
 
@@ -72,17 +54,17 @@ Services.defaultProps = {
       branches: null,
     },
     {
-      title: "Artifical Intelligence",
-      icon: "fas fa-cogs",
+      title: "Mobile Application Development",
+      icon: "fas fa-mobile",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nam unde! Molestiae iusto ipsum porro accusamus libero, eveniet quam ab, atque omnis, optio repudiandae modi rem. Quas ipsa a consequuntur!",
       link: "/",
       branches: null,
     },
     {
-      title: "IoT Solution Development",
+      title: "Custom Web Application Development",
 
-      icon: "fas fa-cogs",
+      icon: "fas fa-laptop-code",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nam unde! Molestiae iusto ipsum porro accusamus libero, eveniet quam ab, atque omnis, optio repudiandae modi rem. Quas ipsa a consequuntur!",
 
@@ -90,8 +72,26 @@ Services.defaultProps = {
       branches: null,
     },
     {
-      title: "Artifical Intelligence",
-      icon: "fas fa-cogs",
+      title: "Manage Services",
+      icon: "fas fa-users-cog",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nam unde! Molestiae iusto ipsum porro accusamus libero, eveniet quam ab, atque omnis, optio repudiandae modi rem. Quas ipsa a consequuntur!",
+      link: "/",
+      branches: null,
+    },
+    {
+      title: "Staff Augmentation",
+
+      icon: "fas fa-users",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nam unde! Molestiae iusto ipsum porro accusamus libero, eveniet quam ab, atque omnis, optio repudiandae modi rem. Quas ipsa a consequuntur!",
+
+      link: "/",
+      branches: null,
+    },
+    {
+      title: "Embedded Software Development Services",
+      icon: "fas fa-microchip",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nam unde! Molestiae iusto ipsum porro accusamus libero, eveniet quam ab, atque omnis, optio repudiandae modi rem. Quas ipsa a consequuntur!",
       link: "/",
