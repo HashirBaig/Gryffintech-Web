@@ -12,6 +12,6 @@ export const RebootStyles = createGlobalStyle`
     margin: 0;
     font-family: "Helvetica", sans-sarif;
     text-decoration: none;
-    background-color: #f0f0f0;
+    background-color: #f6f6f6;
   }
 `

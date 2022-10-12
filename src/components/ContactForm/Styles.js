@@ -1,42 +1,79 @@
 import styled from "styled-components"
+// import Select from "react-select"
 import { colors, font } from "../../const"
-import { media } from "../../utils/shapes/mediaQueryHelper"
+// import { media } from "../../utils/shapes/mediaQueryHelper"
 import { Form, Field } from "formik"
 
-export const StyledLabel = styled.label`
-  color: ${colors.darker};
-  font-weight: 400;
-`
 export const StyledForm = styled(Form)`
-  // margin-top: 280px;
-  padding: 10px;
+  height: 100%;
+  width: auto;
+  padding: 30px 35px;
+  background-color: white;
+  border-radius: 4px;
+  line-height: 37px;
+  filter: drop-shadow(0px 0px 15px ${colors.shadow});
 `
 export const StyledFormContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin: 10px 0px;
+  text-align: left;
 `
-export const StyledFormNameContainer = styled.div`
+export const StyledNameContainer = styled.div`
   display: flex;
-  gap: 30px;
+  text-align: left;
+  gap: 20px;
+`
+export const StyledFirstNameContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+export const StyledLastNameContainer = styled.div`
+  display: flex;
+  flex-direction: column;
 `
 
+export const StyledLabel = styled.label`
+  color: ${colors.font.primary};
+  font-weight: 400;
+`
 export const StyledField = styled(Field)`
-  width: 100%;
+  width: auto;
   height: 40px;
   line-height: normal;
   outline: none;
-  border: 2px solid ${colors.darker};
+  border: 2px solid ${colors.border.primary};
   border-radius: 4px;
-  padding: 0px 10px;
-  background-color: ${colors.light};
+  background-color: transparent;
+  padding: 2px 10px;
+  font-size: ${font.size.md};
+`
+
+export const StyledSelect = styled.select`
+  width: auto;
+  height: 45px;
+  line-height: normal;
+  outline: none;
+  border: 2px solid ${colors.border.primary};
+  border-radius: 4px;
+  background-color: inherit;
+  color: ${colors.dark};
+  & > option {
+    padding: 15px 0px;
+    font-size: ${font.size.lg};
+    &:hover {
+      background: green;
+    }
+  }
 `
 
 export const StyledButtonContainer = styled.div`
-  text-align: right;
+  width: 100%;
+  height: 100%;
+  margin: 8px 0px;
 `
 export const StyledButton = styled.button`
+  width: 100%;
+  height: 40px;
   outline: none;
   font-size: 16px;
   font-weight: 600;
@@ -45,20 +82,19 @@ export const StyledButton = styled.button`
   color: ${colors.light};
   background-color: ${colors.dark};
   cursor: pointer;
-  transition: all 0.3ms ease;
-
-  :placeholder {
-    font-size: ${font.size.xl};
-  }
+  transition: all 0.4ms ease;
 
   :hover {
-    border: 2px solid ${colors.dark};
-    background-color: ${colors.light};
+    border: 2px solid ${colors.border.primary};
+    background-color: ${colors.white};
     color: ${colors.dark};
   }
-
-  ${media.desktop`
-      padding: 10px 25px;
-      margin: 15px -17px 15px 0px;
-  `}
+`
+export const StyledErrorMessage = styled.p`
+  font-size: 12px;
+  font-weight: 600;
+  color: ${colors.message.error};
+  transition: 0.2s ease-out all;
+  margin: 0px;
+  padding: 0px;
 `

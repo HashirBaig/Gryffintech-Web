@@ -1,18 +1,43 @@
 import React from "react"
-import { Formik } from "formik"
+import { Formik, ErrorMessage } from "formik"
 import {
   StyledForm,
-  StyledFormNameContainer,
+  StyledNameContainer,
+  StyledFirstNameContainer,
+  StyledLastNameContainer,
   StyledField,
+  StyledSelect,
   StyledLabel,
   StyledButton,
   StyledButtonContainer,
   StyledFormContainer,
+  StyledErrorMessage,
 } from "./Styles"
+import { services } from "../../utils/common"
+import RequireFieldMark from "../RequiredFieldMark/"
 
-const textAreaStyles = { height: "150px", padding: "10px 10px", fontSize: "14px", fontFamily: "Helvetica, sans-sarif" }
+const textAreaStyles = { height: "150px", fontSize: "14px", fontFamily: "Helvetica, sans-sarif" }
 
 function ContactForm() {
+  const validate = value => {
+    let error
+    if (!value) {
+      error = "Required"
+    }
+    return error
+  }
+
+  const validateEmail = value => {
+    let error
+    if (!value) {
+      error = "Required"
+    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(value)) {
+      error = "Invalid email address"
+    }
+
+    return error
+  }
+
   const onSubmit = values => {
     console.log("val: ", values)
   }
@@ -22,23 +47,41 @@ function ContactForm() {
   return (
     <Formik initialValues={initialValues} onSubmit={onSubmit}>
       <StyledForm>
-        <StyledFormNameContainer>
-          <StyledFormContainer>
-            <StyledLabel>Name</StyledLabel>
-            <StyledField name="firstName" placeholder="Name"></StyledField>
-          </StyledFormContainer>
-          <StyledFormContainer>
-            <StyledLabel>Last Name</StyledLabel>
-            <StyledField name="lastName" placeholder="Last Name"></StyledField>
-          </StyledFormContainer>
-        </StyledFormNameContainer>
+        <StyledNameContainer>
+          <StyledFirstNameContainer>
+            <StyledLabel>
+              First Name
+              <RequireFieldMark />{" "}
+            </StyledLabel>
+            <StyledField name="firstName" placeholder="Name" validate={validate}></StyledField>
+            <ErrorMessage name="firstName" component={StyledErrorMessage} />
+          </StyledFirstNameContainer>
+          <StyledLastNameContainer>
+            <StyledLabel>
+              Last Name
+              <RequireFieldMark />{" "}
+            </StyledLabel>
+            <StyledField name="lastName" placeholder="Last Name" validate={validate}></StyledField>
+            <ErrorMessage name="lastName" component={StyledErrorMessage} />
+          </StyledLastNameContainer>
+        </StyledNameContainer>
         <StyledFormContainer>
-          <StyledLabel>Email</StyledLabel>
-          <StyledField name="email" placeholder="Enter your email" type="email"></StyledField>
+          <StyledLabel>
+            Email
+            <RequireFieldMark />{" "}
+          </StyledLabel>
+          <StyledField name="email" placeholder="Enter your email" type="email" validate={validateEmail}></StyledField>
+          <ErrorMessage name="email" component={StyledErrorMessage} />
         </StyledFormContainer>
         <StyledFormContainer>
           <StyledLabel>How can we help you?</StyledLabel>
-          <StyledField name="services"></StyledField>
+          <StyledSelect name="services">
+            {services.map((service, idx) => (
+              <option value={service.label} key={`${service.label}-${idx}`}>
+                {service.label}
+              </option>
+            ))}
+          </StyledSelect>
         </StyledFormContainer>
         <StyledFormContainer>
           <StyledLabel>Message</StyledLabel>
