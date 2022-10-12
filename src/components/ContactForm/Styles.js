@@ -41,7 +41,7 @@ export const StyledField = styled(Field)`
   height: 40px;
   line-height: normal;
   outline: none;
-  border: 2px solid rgb(100, 100, 100);
+  border: 2px solid ${colors.border.primary};
   border-radius: 4px;
   background-color: transparent;
   padding: 2px 10px;
@@ -53,7 +53,7 @@ export const StyledSelect = styled.select`
   height: 45px;
   line-height: normal;
   outline: none;
-  border: 2px solid rgb(100, 100, 100);
+  border: 2px solid ${colors.border.primary};
   border-radius: 4px;
   background-color: inherit;
   color: ${colors.dark};
@@ -85,7 +85,7 @@ export const StyledButton = styled.button`
   transition: all 0.4ms ease;
 
   :hover {
-    border: 2px solid ${colors.dark};
+    border: 2px solid ${colors.border.primary};
     background-color: ${colors.white};
     color: ${colors.dark};
   }
