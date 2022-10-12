@@ -2,8 +2,9 @@ import React from "react"
 import {
   StyledWrapper,
   StyledContainer,
-  StyledContactTextContainer,
+  StyledContactInfoContainer,
   StyledContactHeader,
+  StyledH2,
   StyledContactParaContainer,
   StyledContactParagraph,
 } from "./Styles"
@@ -12,10 +13,13 @@ import ContactForm from "../ContactForm"
 
 function Contact() {
   return (
-    <StyledWrapper>
+    <StyledWrapper id="contact">
+      <StyledContactHeader>Contact us</StyledContactHeader>
+      <StyledContactParagraph>We would love to hear about your project</StyledContactParagraph>
       <StyledContainer>
-        <StyledContactTextContainer>
-          <StyledContactHeader>Contact us</StyledContactHeader>
+        <ContactForm />
+        {/* <StyledContactInfoContainer>
+          <StyledH2>Contact Information</StyledH2>
           <StyledContactParaContainer>
             <StyledContactParagraph>We would love to hear about your project.</StyledContactParagraph>
             <StyledContactParagraph>
@@ -24,8 +28,7 @@ function Contact() {
           </StyledContactParaContainer>
           <StyledContactParagraph>Gryffintech Islamabad</StyledContactParagraph>
           <StyledContactParagraph>hello@gryffintech.com</StyledContactParagraph>
-        </StyledContactTextContainer>
-        <ContactForm />
+        </StyledContactInfoContainer> */}
       </StyledContainer>
     </StyledWrapper>
   )
