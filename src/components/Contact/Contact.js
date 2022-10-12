@@ -1,13 +1,5 @@
 import React from "react"
-import {
-  StyledWrapper,
-  StyledContainer,
-  StyledContactInfoContainer,
-  StyledContactHeader,
-  StyledH2,
-  StyledContactParaContainer,
-  StyledContactParagraph,
-} from "./Styles"
+import { StyledWrapper, StyledContainer, StyledContactHeader, StyledContactParagraph } from "./Styles"
 
 import ContactForm from "../ContactForm"
 

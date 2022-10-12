@@ -17,26 +17,10 @@ export const StyledWrapper = styled.section`
   margin: 60px 0px;
   text-align: center;
 `
-export const StyledContactInfoContainer = styled.div`
-  height: 100vh;
-  background-color: ${colors.dark};
-  color: ${colors.light};
-  text-align: center;
-  padding: 10px;
-  border-radius: 4px;
-`
 export const StyledContactHeader = styled.h1`
   font-weight: 800;
   font-size: 38px;
   margin-bottom: 0px;
-`
-export const StyledH2 = styled.h2`
-  font-weight: 800;
-  font-size: 30px;
-  margin-bottom: 0px;
-`
-export const StyledContactParaContainer = styled.p`
-  margin: 40px 0px;
 `
 export const StyledContactParagraph = styled.p`
   color: ${colors.font.primary};
