@@ -18,7 +18,7 @@ function Carousel() {
           <StyledParagrah>Get in touch with one of our specialists</StyledParagrah>
         </Fade>
         <Fade bottom cascade>
-          <StyledButton>Contact us</StyledButton>
+          <StyledButton href="#contact">Contact us</StyledButton>
         </Fade>
       </StyledCarouselContainer>
     </StyledWrapper>

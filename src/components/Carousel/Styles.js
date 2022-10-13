@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { colors, font } from "../../const"
-import { media } from "../../utils/shapes/mediaQueryHelper"
+// import { media } from "../../utils/shapes/mediaQueryHelper"
 
 export const StyledWrapper = styled.div`
   width: 100%;
@@ -23,19 +23,20 @@ export const StyledHeading = styled.h1`
   font-size: ${font.size.xxxl};
   font-weight: 800;
   color: ${colors.light};
-  ${media.palm`
+
+  @media screen and (max-width: 530px) {
     text-align: center;
-  `}
+  }
 `
 export const StyledParagrah = styled.p`
-  ${media.palm`
+  @media screen and (max-width: 530px) {
     text-align: center;
-  `}
+  }
   font-size: 18px;
   color: ${colors.light};
 `
 
-export const StyledButton = styled.button`
+export const StyledButton = styled.a`
   outline: none;
   font-size: 16px;
   font-weight: 600;
