@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { colors, font } from "../../const"
+import { media } from "../../utils/shapes/mediaQueryHelper"
 
 export const StyledWrapper = styled.div`
   width: 100%;
@@ -7,7 +8,6 @@ export const StyledWrapper = styled.div`
   display: flex;
   justify-content: center;
   background: radial-gradient(${colors.dark}, ${colors.darker});
-  // background-color: ${colors.dark};
 `
 export const StyledCarouselContainer = styled.div`
   height: auto;
@@ -23,8 +23,14 @@ export const StyledHeading = styled.h1`
   font-size: ${font.size.xxxl};
   font-weight: 800;
   color: ${colors.light};
+  ${media.palm`
+    text-align: center;
+  `}
 `
 export const StyledParagrah = styled.p`
+  ${media.palm`
+    text-align: center;
+  `}
   font-size: 18px;
   color: ${colors.light};
 `
@@ -43,8 +49,9 @@ export const StyledButton = styled.button`
 
   :hover {
     border: 1px solid ${colors.light};
-    background-color: ${colors.dark};
+    background-color: transparent;
     color: ${colors.light};
+    transition: all 0.3s ease;
   }
 `
 export const StyledIcon = styled.i`
