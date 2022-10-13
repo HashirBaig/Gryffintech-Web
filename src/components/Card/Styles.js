@@ -16,6 +16,8 @@ export const StyledCard = styled.div`
 export const StyledCardIcon = styled.i`
   font-size: ${font.size.icon};
 `
-export const StyledCardHeader = styled.h2``
+export const StyledCardHeader = styled.h2`
+  height: 7vh;
+`
 export const StyledCardBody = styled.div``
 export const StyledCardParagraph = styled.p``

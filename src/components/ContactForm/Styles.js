@@ -38,7 +38,7 @@ export const StyledLastNameContainer = styled.div`
 
 export const StyledLabel = styled.label`
   color: ${colors.font.primary};
-  font-weight: 400;
+  font-weight: 700;
 `
 export const StyledField = styled(Field)`
   width: auto;
