@@ -1,12 +1,14 @@
 import React from "react"
-import { StyledHeader, StyledLogo } from "./Styles"
+import { StyledHeader, StyledLogo, StyledImage } from "./Styles"
 
 import Navbar from "../../Navbar"
 
 function Header() {
   return (
     <StyledHeader>
-      <StyledLogo>LOGO</StyledLogo>
+      <StyledLogo>
+        <StyledImage src="/assets/images/gt-logo.jpg" alt="logo" />
+      </StyledLogo>
       <Navbar />
     </StyledHeader>
   )
