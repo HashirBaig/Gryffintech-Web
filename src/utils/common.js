@@ -54,7 +54,7 @@ export const services = [
     ],
   },
   {
-    label: "Custom Web Application Development",
+    label: "Web Application Development",
     icon: "fas fa-laptop-code",
     description:
       "Custom web solutions designed and developed help you augment ROI and transform visitors into rewarding opportunities",

@@ -6,6 +6,9 @@ export const StyledApp = styled.div`
 `
 
 export const RebootStyles = createGlobalStyle`
+  html{
+    scroll-behavior: smooth;
+  }
   body{
     left: 0;
     top: 0;

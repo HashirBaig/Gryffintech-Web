@@ -16,7 +16,7 @@ import {
 import { services } from "../../utils/common"
 import RequireFieldMark from "../RequiredFieldMark/"
 
-const textAreaStyles = { height: "150px", fontSize: "14px", fontFamily: "Helvetica, sans-sarif" }
+const textAreaStyles = { height: "150px", fontSize: "14px", padding: "10px 10px", fontFamily: "Helvetica, sans-sarif" }
 
 function ContactForm() {
   const validate = value => {
@@ -85,7 +85,12 @@ function ContactForm() {
         </StyledFormContainer>
         <StyledFormContainer>
           <StyledLabel>Message</StyledLabel>
-          <StyledField name="message" as={"textarea"} style={textAreaStyles}></StyledField>
+          <StyledField
+            name="message"
+            as={"textarea"}
+            style={textAreaStyles}
+            placeholder="Let us know your thoughts"
+          ></StyledField>
         </StyledFormContainer>
         <StyledButtonContainer>
           <StyledButton>Send</StyledButton>

@@ -9,4 +9,5 @@ export const StyledDropdown = styled.div`
   background-color: white;
   padding: 5px;
   line-height: 25px;
+  z-index: 10;
 `
