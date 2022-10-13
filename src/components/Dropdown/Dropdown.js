@@ -6,7 +6,7 @@ import TreeItem from "../TreeItem"
 function Dropdown({ tree }) {
   const createTree = branch => {
     return (
-      <TreeItem label={branch?.title} link={branch?.link}>
+      <TreeItem label={branch?.label} link={branch?.link}>
         {branch?.branches?.map((branch, idx) => (
           <Fragment key={`Tree-item-${idx}`}>{createTree(branch)}</Fragment>
         ))}
