@@ -19,6 +19,10 @@ export const StyledFormContainer = styled.div`
   text-align: left;
 `
 export const StyledNameContainer = styled.div`
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
+
   display: flex;
   text-align: left;
   gap: 20px;
@@ -69,7 +73,7 @@ export const StyledSelect = styled.select`
 export const StyledButtonContainer = styled.div`
   width: 100%;
   height: 100%;
-  margin: 8px 0px;
+  margin: 10px 0px;
 `
 export const StyledButton = styled.button`
   width: 100%;
@@ -82,7 +86,7 @@ export const StyledButton = styled.button`
   color: ${colors.light};
   background-color: ${colors.dark};
   cursor: pointer;
-  transition: all 0.4ms ease;
+  transition: all 0.3s ease;
 
   :hover {
     border: 2px solid ${colors.border.primary};
