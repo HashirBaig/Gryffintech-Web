@@ -14,4 +14,8 @@ export const StyledLogo = styled.div`
   font-size: 24px;
   margin-left: 20px;
 `
-export const StyledSpan = styled.span``
+export const StyledImage = styled.img`
+  width: 60px;
+  height: auto;
+  background: norepeat;
+`
