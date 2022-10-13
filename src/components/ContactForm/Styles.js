@@ -5,6 +5,11 @@ import { colors, font } from "../../const"
 import { Form, Field } from "formik"
 
 export const StyledForm = styled(Form)`
+  @media screen and (max-width: 480px) {
+    height: 100%;
+    width: 100%;
+  }
+
   height: 100%;
   width: auto;
   padding: 30px 35px;
@@ -38,7 +43,7 @@ export const StyledLastNameContainer = styled.div`
 
 export const StyledLabel = styled.label`
   color: ${colors.font.primary};
-  font-weight: 400;
+  font-weight: 700;
 `
 export const StyledField = styled(Field)`
   width: auto;

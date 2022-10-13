@@ -3,7 +3,7 @@ import Pulse from "react-reveal/Pulse"
 import Fade from "react-reveal/Fade"
 import { StyledWrapper, StyledCarouselContainer, StyledHeading, StyledParagrah, StyledButton } from "./Styles"
 
-function Carousel() {
+function Carousel({ executeScroll }) {
   return (
     <StyledWrapper>
       <StyledCarouselContainer>
@@ -18,7 +18,7 @@ function Carousel() {
           <StyledParagrah>Get in touch with one of our specialists</StyledParagrah>
         </Fade>
         <Fade bottom cascade>
-          <StyledButton href="#contact">Contact us</StyledButton>
+          <StyledButton onClick={executeScroll}>Contact us</StyledButton>
         </Fade>
       </StyledCarouselContainer>
     </StyledWrapper>

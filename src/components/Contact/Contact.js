@@ -3,9 +3,9 @@ import { StyledWrapper, StyledContainer, StyledContactHeader, StyledContactParag
 
 import ContactForm from "../ContactForm"
 
-function Contact() {
+function Contact({ myRef }) {
   return (
-    <StyledWrapper id="contact">
+    <StyledWrapper ref={myRef}>
       <StyledContactHeader>Contact us</StyledContactHeader>
       <StyledContactParagraph>We would love to hear about your project</StyledContactParagraph>
       <StyledContainer>

@@ -36,8 +36,7 @@ export const StyledParagrah = styled.p`
   color: ${colors.light};
 `
 
-export const StyledButton = styled.a`
-  text-decoration: none;
+export const StyledButton = styled.button`
   outline: none;
   font-size: 16px;
   font-weight: 600;

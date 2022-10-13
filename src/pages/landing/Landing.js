@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useRef } from "react"
 import { StyledWrapper } from "./Styles"
 
 import Header from "../../components/layouts/home"
@@ -8,12 +8,14 @@ import Contact from "../../components/Contact"
 import Footer from "../../components/layouts/footer"
 
 function Landing() {
+  const myRef = useRef(null)
+  const executeScroll = () => myRef.current.scrollIntoView()
   return (
     <StyledWrapper>
       <Header />
-      <Carousel />
+      <Carousel executeScroll={executeScroll} />
       <Services />
-      <Contact />
+      <Contact myRef={myRef} />
       <Footer />
     </StyledWrapper>
   )
