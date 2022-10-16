@@ -2,6 +2,12 @@ import styled from "styled-components"
 import { colors } from "../../const"
 
 export const StyledCard = styled.div`
+  @media screen and (max-width: 480px) {
+    width: 150px;
+    heigh: auto;
+    text-align: center;
+  }
+
   width: 200px;
   heigh: auto;
   padding: 40px 20px;
@@ -15,6 +21,9 @@ export const StyledCard = styled.div`
   }
 `
 export const StyledCardIcon = styled.i`
+  @media screen and (max-width: 480px) {
+    font-size: 38px;
+  }
   font-size: 34px;
 `
 export const StyledCardHeader = styled.h3`
@@ -22,5 +31,8 @@ export const StyledCardHeader = styled.h3`
 `
 export const StyledCardBody = styled.div``
 export const StyledCardParagraph = styled.p`
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
   text-align: left;
 `
