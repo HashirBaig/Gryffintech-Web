@@ -1,13 +1,24 @@
 import styled from "styled-components"
 
 export const StyledDropdown = styled.div`
-  position: absolute;
+  ${({ isMobileOrTabletView }) =>
+    !isMobileOrTabletView
+      ? `
+      position: absolute;
+      top: 50px;
+      `
+      : ``}
   min-width: 250px;
-  top: 50px;
   border: 1px solid rgb(50, 50, 50);
   border-radius: 4px;
   background-color: white;
-  padding: 5px;
   line-height: 25px;
-  z-index: 10;
+  padding: 7px;
+
+  @media screen and (max-width: 720px) {
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    top: 0;
+  }
 `

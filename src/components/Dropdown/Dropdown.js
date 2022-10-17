@@ -3,7 +3,7 @@ import { StyledDropdown } from "./Styles"
 
 import TreeItem from "../TreeItem"
 
-function Dropdown({ tree }) {
+function Dropdown({ tree, isMobileOrTabletView }) {
   const createTree = branch => {
     return (
       <TreeItem label={branch?.label} link={branch?.link}>
@@ -15,7 +15,7 @@ function Dropdown({ tree }) {
   }
 
   return (
-    <StyledDropdown>
+    <StyledDropdown isMobileOrTabletView={isMobileOrTabletView}>
       {tree?.map((branch, idx) => {
         return <Fragment key={`dropdown-${idx}`}>{createTree(branch)}</Fragment>
       })}

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import {
   StyledNavbar,
   StyledNavItemContainer,
@@ -13,6 +13,14 @@ import { navMenu } from "../../utils/common"
 
 function Navbar() {
   const [openDropdown, setOpenDropdown] = useState(null)
+  const [isMobileOrTabletView, setIsMobileOrTabletView] = useState(false)
+
+  useEffect(() => {
+    const viewport = window.innerWidth
+    if (viewport <= 720) {
+      setIsMobileOrTabletView(true)
+    }
+  }, [])
 
   const handleOpenDropdown = label => {
     if (label === openDropdown) return setOpenDropdown(null)
@@ -37,7 +45,7 @@ function Navbar() {
               </StyledNavItem>
             )}
 
-            {isOpen && <Dropdown tree={tree} />}
+            {isOpen && <Dropdown tree={tree} isMobileOrTabletView={isMobileOrTabletView} />}
           </StyledNavItemContainer>
         )
       })}
