@@ -6,13 +6,12 @@ import { StyledCard, StyledCardHeader, StyledIconContainer, StyledCardIcon, Styl
 function Card({ icon = "far fa-envelope", header, src, label, executeScroll }) {
   return (
     <StyledCard>
-      <Fade>
-        <StyledImg src={src} alt={label} />
-      </Fade>
-
       <Pulse>
         <StyledCardHeader>{header}</StyledCardHeader>
       </Pulse>
+      <Fade>
+        <StyledImg src={src} alt={label} />
+      </Fade>
 
       {/* <Fade bottom cascade>
         <StyledCardBody>

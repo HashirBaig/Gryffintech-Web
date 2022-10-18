@@ -1,20 +1,25 @@
-const DARK_COLOR_1 = "rgb(20,20,20)"
-const DARK_COLOR_2 = "rgb(40,40,40)"
-const DARK_COLOR_3 = "rgb(100,100,100)"
-const DARK_COLOR_4 = "rgb(190,190,190)"
+const DARK_COLOR_1 = "#173954"
+const DARK_COLOR_2 = "#00212A"
+const ORANGE_COLOR_1 = "#FF5325"
+const ORANGE_COLOR_2 = "#E2390E"
 
 const colors = {
   font: {
-    primary: DARK_COLOR_1,
+    primary: ORANGE_COLOR_1,
+    secondary: ORANGE_COLOR_2,
+    dark: DARK_COLOR_1,
+    darker: DARK_COLOR_1,
   },
   light: "#f0f0f0",
   white: "#ffffff",
-  dark: DARK_COLOR_2,
-  darker: DARK_COLOR_1,
-  shadow: DARK_COLOR_4,
+  primary: ORANGE_COLOR_1,
+  seconday: ORANGE_COLOR_2,
+  dark: DARK_COLOR_1,
+  darker: DARK_COLOR_2,
+  shadow: "#A8B4BF",
   message: { error: "#ff5e5e" },
   border: {
-    primary: DARK_COLOR_3,
+    primary: DARK_COLOR_1,
   },
 }
 export default colors

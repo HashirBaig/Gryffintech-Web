@@ -42,7 +42,7 @@ export const StyledLastNameContainer = styled.div`
 `
 
 export const StyledLabel = styled.label`
-  color: ${colors.font.primary};
+  color: ${colors.font.dark};
   font-weight: 700;
 `
 export const StyledField = styled(Field)`
@@ -94,9 +94,9 @@ export const StyledButton = styled.button`
   transition: all 0.3s ease;
 
   :hover {
-    border: 2px solid ${colors.border.primary};
-    background-color: ${colors.white};
-    color: ${colors.dark};
+    border: 2px solid ${colors.primary};
+    background-color: ${colors.primary};
+    color: ${colors.light};
   }
 `
 export const StyledErrorMessage = styled.p`

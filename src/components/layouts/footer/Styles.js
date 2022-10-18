@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { colors, font } from "../../../const"
 
 export const StyledFooter = styled.div`
+  position: relative;
   width: 100%;
   height: auto;
   padding: 30px 0px 10px 0px;
