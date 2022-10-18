@@ -45,7 +45,11 @@ function Card({ header, src, label, description, executeScroll }) {
             <StyledCardIcon className="far fa-envelope"></StyledCardIcon>
           </StyledIconContainer>
 
-          <StyledIconContainer onClick={toggleDescription} title="Read description">
+          <StyledIconContainer
+            onMouseEnter={toggleDescription}
+            onMouseLeave={toggleDescription}
+            title="Read description"
+          >
             <StyledCardIcon className="far fa-newspaper"></StyledCardIcon>
           </StyledIconContainer>
         </StyledContainer>
