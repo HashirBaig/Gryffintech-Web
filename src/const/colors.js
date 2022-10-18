@@ -11,6 +11,7 @@ const colors = {
     darker: DARK_COLOR_1,
   },
   light: "#f0f0f0",
+  lightOrange: "#FCF3EE",
   white: "#ffffff",
   primary: ORANGE_COLOR_1,
   seconday: ORANGE_COLOR_2,

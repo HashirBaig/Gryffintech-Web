@@ -19,8 +19,8 @@ export const StyledServiceCardContainer = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-around;
-  gap: 10px;
+  justify-content: space-evenly;
+  gap: 20px;
   flex-wrap: wrap;
   position: relative;
 `

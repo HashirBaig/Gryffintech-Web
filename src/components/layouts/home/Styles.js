@@ -9,7 +9,7 @@ export const StyledHeader = styled.div`
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  box-shadow: 0 3px 8px ${colors.shadow};
+  box-shadow: 0 3px 8px ${colors.lightOrange};
   z-index: 10;
 `
 export const StyledLogo = styled.div`
