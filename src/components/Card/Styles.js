@@ -1,33 +1,57 @@
 import styled from "styled-components"
-import { colors } from "../../const"
+import { colors, font } from "../../const"
 
 export const StyledCard = styled.div`
   @media screen and (max-width: 480px) {
-    width: 150px;
+    width: 140px;
     heigh: auto;
     text-align: center;
   }
 
-  width: 200px;
-  heigh: auto;
-  padding: 40px 20px;
+  width: 220px;
+  heigh: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: white;
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: 6px;
+  background-color: ${colors.white};
+  gap: 10px;
+
   :hover {
     filter: drop-shadow(0px 0px 15px ${colors.shadow});
     transform: scale(1);
     transition: all 0.3s ease;
   }
 `
+
+export const StyledIconContainer = styled.div`
+  text-align: center;
+`
 export const StyledCardIcon = styled.i`
   @media screen and (max-width: 480px) {
-    font-size: 38px;
+    font-size: 24px;
   }
-  font-size: 34px;
+  font-size: 24px;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 50%;
+  :hover {
+    background-color: ${colors.light};
+    cursor: pointer;
+  }
 `
-export const StyledCardHeader = styled.h3`
+export const StyledCardHeader = styled.h4`
+  margin: 0 0;
   height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 480px) {
+    font-size: ${font.size.md};
+  }
 `
 export const StyledCardBody = styled.div``
 export const StyledCardParagraph = styled.p`
@@ -35,4 +59,8 @@ export const StyledCardParagraph = styled.p`
     display: none;
   }
   text-align: left;
+`
+export const StyledImg = styled.img`
+  width: 100%;
+  height: auto;
 `

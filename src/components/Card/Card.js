@@ -1,21 +1,28 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
 import Pulse from "react-reveal/Pulse"
-import { StyledCard, StyledCardIcon, StyledCardHeader, StyledCardBody, StyledCardParagraph } from "./Styles"
+import { StyledCard, StyledCardHeader, StyledIconContainer, StyledCardIcon, StyledImg } from "./Styles"
 
-function Card({ icon = "fas fa-cogs", header, description }) {
+function Card({ icon = "far fa-envelope", header, src, label, executeScroll }) {
   return (
     <StyledCard>
-      <Fade top cascade>
-        <StyledCardIcon className={icon}></StyledCardIcon>
+      <Fade>
+        <StyledImg src={src} alt={label} />
       </Fade>
+
       <Pulse>
         <StyledCardHeader>{header}</StyledCardHeader>
       </Pulse>
-      <Fade bottom cascade>
+
+      {/* <Fade bottom cascade>
         <StyledCardBody>
           <StyledCardParagraph>{description}</StyledCardParagraph>
         </StyledCardBody>
+      </Fade> */}
+      <Fade top cascade>
+        <StyledIconContainer onClick={executeScroll}>
+          <StyledCardIcon className={icon}></StyledCardIcon>
+        </StyledIconContainer>
       </Fade>
     </StyledCard>
   )

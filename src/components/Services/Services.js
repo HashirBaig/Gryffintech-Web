@@ -3,14 +3,23 @@ import { StyledWapper, StyledServiceHeader, StyledServiceCardContainer } from ".
 import Card from "../Card"
 import { services } from "../../utils/common"
 
-function Services() {
+function Services({ executeScroll }) {
   return (
     <StyledWapper>
       <StyledServiceHeader>Our Services</StyledServiceHeader>
       <StyledServiceCardContainer>
-        {services.map(({ label, description, icon }, idx) => (
-          <Card key={`Card-${label}-${idx}`} header={label} description={description} icon={icon} />
-        ))}
+        {services.map(({ label, description, src }, idx) => {
+          return (
+            <Card
+              key={idx}
+              header={label}
+              description={description}
+              src={src}
+              label={label}
+              executeScroll={executeScroll}
+            />
+          )
+        })}
       </StyledServiceCardContainer>
     </StyledWapper>
   )
