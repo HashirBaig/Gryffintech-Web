@@ -18,9 +18,10 @@ export const StyledCard = styled.div`
   border-radius: 6px;
   background-color: ${colors.white};
   gap: 10px;
+  padding: 0 10px;
 
   :hover {
-    filter: drop-shadow(0px 0px 15px ${colors.shadow});
+    filter: drop-shadow(0px 0px 6px ${colors.shadow});
     transform: scale(1);
     transition: all 0.3s ease;
   }
@@ -63,4 +64,5 @@ export const StyledCardParagraph = styled.p`
 export const StyledImg = styled.img`
   width: 100%;
   height: auto;
+  border-radius: 4px;
 `

@@ -1,39 +1,47 @@
 import styled from "styled-components"
 import { colors, font } from "../../const"
-// import { media } from "../../utils/shapes/mediaQueryHelper"
 
 export const StyledWrapper = styled.div`
   width: 100%;
-  height: 470px;
+  height: auto;
   display: flex;
-  justify-content: center;
-  background: radial-gradient(${colors.dark}, ${colors.darker});
+  align-items: center;
+  justify-content: space-around;
+  padding: 60px 0px;
+
+  @media screen and (max-width: 720px) {
+    display: block;
+  }
 `
 export const StyledCarouselContainer = styled.div`
-  height: auto;
   width: 500px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 720px) {
+    width: auto;
+  }
 `
 
 export const StyledHeading = styled.h1`
   margin-bottom: 0px;
   font-size: ${font.size.xxxl};
   font-weight: 800;
-  color: ${colors.light};
+  color: ${colors.dark};
 
   @media screen and (max-width: 530px) {
     text-align: center;
   }
 `
 export const StyledParagrah = styled.p`
-  @media screen and (max-width: 530px) {
+  @media screen and (max-width: 720px) {
     text-align: center;
   }
   font-size: 18px;
-  color: ${colors.light};
+  color: ${colors.dark};
 `
 
 export const StyledButton = styled.button`
@@ -41,16 +49,15 @@ export const StyledButton = styled.button`
   font-size: 16px;
   font-weight: 600;
   padding: 10px 25px;
-  border: 1px solid ${colors.dark};
+  border: none;
   margin: 15px 0px;
   border-radius: 4px;
-  color: inherit;
-  background-color: ${colors.light};
+  color: ${colors.light};
+  background-color: ${colors.seconday};
   cursor: pointer;
 
   :hover {
-    border: 1px solid ${colors.light};
-    background-color: transparent;
+    background-color: ${colors.darker};
     color: ${colors.light};
     transition: all 0.3s ease;
   }
@@ -58,4 +65,36 @@ export const StyledButton = styled.button`
 export const StyledIcon = styled.i`
   font-size: ${font.size.icon};
   margin-left: 8px;
+`
+export const StyledBg = styled.div``
+export const StyledBgImgContainer = styled.div``
+export const StyledBgImg = styled.img`
+  position: fixed;
+  width: 100%;
+  height: auto;
+  margin-top: -150px;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 720px) {
+    display: none;
+  }
+`
+export const StyledGifContainer = styled.div`
+  border: 4px dotted ${colors.darker};
+  border-radius: 50%;
+  padding: 15px;
+
+  @media screen and (max-width: 720px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+`
+export const StyledGif = styled.img`
+  position: relative;
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  background: transparent;
 `

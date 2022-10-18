@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { colors, font } from "../../const"
 
 export const StyledWapper = styled.div`
+  position: relative;
   width: 100%;
   height: 100%;
   padding: 0px 0px;
@@ -21,4 +22,5 @@ export const StyledServiceCardContainer = styled.div`
   gap: 10px;
   flex-wrap: wrap;
   justify-content: space-around;
+  position: relative;
 `

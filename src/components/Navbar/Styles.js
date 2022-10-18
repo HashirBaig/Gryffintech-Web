@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { colors } from "../../const"
 
 export const StyledNavbar = styled.div`
   @media screen and (max-width: 720px) {
@@ -28,6 +29,13 @@ export const StyledNavItem = styled.div`
   display: flex;
   gap: 4px;
   cursor: pointer;
+  font-weight: bold;
+  color: ${colors.darker};
+
+  :hover {
+    color: ${colors.seconday};
+    transition: all 0.3s ease;
+  }
 
   @media screen and (max-width: 720px) {
     width: 100%;
