@@ -39,9 +39,11 @@ function Carousel({ executeScroll }) {
             <StyledButton onClick={executeScroll}>Contact us</StyledButton>
           </Fade>
         </StyledCarouselContainer>
-        <StyledGifContainer>
-          <StyledGif src="/assets/gifs/gif_1.gif" />
-        </StyledGifContainer>
+        <Fade right cascade>
+          <StyledGifContainer>
+            <StyledGif src="/assets/gifs/gif_1.gif" />
+          </StyledGifContainer>
+        </Fade>
       </StyledWrapper>
     </>
   )

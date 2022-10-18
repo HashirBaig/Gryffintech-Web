@@ -26,7 +26,6 @@ function Footer() {
           <StyledSocialMediaIcon className="fab fa-facebook"></StyledSocialMediaIcon>
           <StyledSocialMediaIcon className="fab fa-instagram"></StyledSocialMediaIcon>
           <StyledSocialMediaIcon className="fab fa-youtube"></StyledSocialMediaIcon>
-          <StyledSocialMediaIcon className="fab fa-twitter"></StyledSocialMediaIcon>
         </StyledSocialMediaIconContainer>
       </StyledSocialMediaContainer>
       <StyledFooterText>

@@ -27,8 +27,17 @@ export const StyledCard = styled.div`
   }
 `
 
+export const StyledContainer = styled.div`
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+`
+
 export const StyledIconContainer = styled.div`
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
 export const StyledCardIcon = styled.i`
   @media screen and (max-width: 480px) {
@@ -54,8 +63,8 @@ export const StyledCardHeader = styled.h4`
     font-size: ${font.size.md};
   }
 `
-export const StyledCardBody = styled.div``
-export const StyledCardParagraph = styled.p`
+export const StyledTextContainer = styled.div``
+export const StyledText = styled.p`
   @media screen and (max-width: 480px) {
     display: none;
   }
