@@ -7,7 +7,7 @@ export const StyledWapper = styled.div`
   height: 100%;
   padding: 0px 0px;
 `
-export const StyledServiceHeader = styled.h1`
+export const StyledHeader = styled.h1`
   margin: 50px 0px;
   text-align: center;
   font-size: ${font.size.xxl};
@@ -19,8 +19,8 @@ export const StyledServiceCardContainer = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  gap: 10px;
+  justify-content: space-evenly;
+  gap: 20px;
   flex-wrap: wrap;
-  justify-content: space-around;
   position: relative;
 `

@@ -1,27 +1,54 @@
-import React from "react"
+import React, { useState } from "react"
 import Fade from "react-reveal/Fade"
 import Pulse from "react-reveal/Pulse"
-import { StyledCard, StyledCardHeader, StyledIconContainer, StyledCardIcon, StyledImg } from "./Styles"
+import {
+  StyledCard,
+  StyledCardHeader,
+  StyledIconContainer,
+  StyledCardIcon,
+  StyledImg,
+  StyledContainer,
+  StyledText,
+  StyledTextContainer,
+} from "./Styles"
 
-function Card({ icon = "far fa-envelope", header, src, label, executeScroll }) {
+function Card({ header, src, label, description, executeScroll }) {
+  const [isDescriptionVisible, setIsDescriptionVisible] = useState(false)
+  const [isImgVisible, setIsImgVisible] = useState(true)
+
+  const toggleDescription = () => {
+    setIsDescriptionVisible(!isDescriptionVisible)
+    setIsImgVisible(!isImgVisible)
+  }
+
   return (
     <StyledCard>
       <Pulse>
         <StyledCardHeader>{header}</StyledCardHeader>
       </Pulse>
-      <Fade>
-        <StyledImg src={src} alt={label} />
-      </Fade>
+      {isImgVisible && (
+        <Fade>
+          <StyledImg src={src} alt={label} />
+        </Fade>
+      )}
 
-      {/* <Fade bottom cascade>
-        <StyledCardBody>
-          <StyledCardParagraph>{description}</StyledCardParagraph>
-        </StyledCardBody>
-      </Fade> */}
-      <Fade top cascade>
-        <StyledIconContainer onClick={executeScroll}>
-          <StyledCardIcon className={icon}></StyledCardIcon>
-        </StyledIconContainer>
+      {isDescriptionVisible && (
+        <Fade bottom cascade>
+          <StyledTextContainer>
+            <StyledText>{description}</StyledText>
+          </StyledTextContainer>
+        </Fade>
+      )}
+      <Fade bottom cascade>
+        <StyledContainer>
+          <StyledIconContainer onClick={executeScroll} title="Contact us">
+            <StyledCardIcon className="far fa-envelope"></StyledCardIcon>
+          </StyledIconContainer>
+
+          <StyledIconContainer onClick={toggleDescription} title="Read description">
+            <StyledCardIcon className="far fa-newspaper"></StyledCardIcon>
+          </StyledIconContainer>
+        </StyledContainer>
       </Fade>
     </StyledCard>
   )

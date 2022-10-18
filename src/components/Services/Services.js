@@ -1,12 +1,12 @@
 import React from "react"
-import { StyledWapper, StyledServiceHeader, StyledServiceCardContainer } from "./Styles"
+import { StyledWapper, StyledHeader, StyledServiceCardContainer } from "./Styles"
 import Card from "../Card"
 import { services } from "../../utils/common"
 
 function Services({ executeScroll }) {
   return (
     <StyledWapper>
-      <StyledServiceHeader>Our Services</StyledServiceHeader>
+      <StyledHeader>Our Services</StyledHeader>
       <StyledServiceCardContainer>
         {services.map(({ label, description, src }, idx) => {
           return (

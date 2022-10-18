@@ -1,7 +1,5 @@
 import styled from "styled-components"
-// import Select from "react-select"
 import { colors, font } from "../../const"
-// import { media } from "../../utils/shapes/mediaQueryHelper"
 import { Form, Field } from "formik"
 
 export const StyledForm = styled(Form)`
@@ -16,7 +14,7 @@ export const StyledForm = styled(Form)`
   background-color: white;
   border-radius: 4px;
   line-height: 37px;
-  filter: drop-shadow(0px 0px 15px ${colors.shadow});
+  filter: drop-shadow(0px 0px 10px ${colors.shadow});
 `
 export const StyledFormContainer = styled.div`
   display: flex;

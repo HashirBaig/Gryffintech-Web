@@ -1,4 +1,5 @@
 import React from "react"
+import { Fade } from "react-reveal"
 import {
   StyledWrapper,
   StyledContainer,
@@ -22,20 +23,34 @@ function Contact({ myRef }) {
       <StyledContainer>
         <ContactForm />
         <StyledInfoContainer>
-          <StyledGifContainer>
-            <StyledGif src="/assets/gifs/contact_us_gif.gif" />
-          </StyledGifContainer>
+          <Fade right cascade>
+            <StyledGifContainer>
+              <StyledGif src="/assets/gifs/contact_us_gif.gif" />
+            </StyledGifContainer>
+          </Fade>
           <StyledInfo>
-            <StyledIconContainer>
-              <StyledIcon className="fas fa-phone"></StyledIcon>
-            </StyledIconContainer>
-            <StyledText>051-2344526</StyledText>
+            <Fade right cascade>
+              <StyledIconContainer>
+                <StyledIcon className="fas fa-phone"></StyledIcon>
+              </StyledIconContainer>
+              <StyledText>051-2344526</StyledText>
+            </Fade>
           </StyledInfo>
           <StyledInfo>
-            <StyledIconContainer>
-              <StyledIcon className="fas fa-map-marker-alt"></StyledIcon>
-            </StyledIconContainer>
-            <StyledText>Razia Sharif Plaza, Blue Area, Islamabad</StyledText>
+            <Fade right cascade>
+              <StyledIconContainer>
+                <StyledIcon className="fas fa-map-marker-alt"></StyledIcon>
+              </StyledIconContainer>
+              <StyledText>Razia Sharif Plaza, Blue Area, Islamabad</StyledText>
+            </Fade>
+          </StyledInfo>
+          <StyledInfo>
+            <Fade right cascade>
+              <StyledIconContainer>
+                <StyledIcon className="fab fa-twitter"></StyledIcon>
+              </StyledIconContainer>
+              <StyledText>@Gryffintech</StyledText>
+            </Fade>
           </StyledInfo>
         </StyledInfoContainer>
       </StyledContainer>

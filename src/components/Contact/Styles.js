@@ -5,6 +5,7 @@ export const StyledContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin: 50px 0;
 
   @media screen and (max-width: 720px) {
     display: block;
@@ -32,7 +33,7 @@ export const StyledInfoContainer = styled.div`
   width: 380px;
   height: 100%;
   & > div {
-    margin: 20px 0;
+    margin: 10px 0;
   }
 `
 
