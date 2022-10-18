@@ -49,8 +49,10 @@ export const StyledMenuButton = styled.i`
   cursor: pointer;
   padding: 5px;
   border-radius: 4px;
+  color: ${colors.dark};
   :hover {
     background-color: ${colors.light};
+    color: ${colors.seconday};
   }
 `
 export const StyledMenu = styled.div`
