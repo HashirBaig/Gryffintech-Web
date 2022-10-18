@@ -14,7 +14,7 @@ function Landing() {
     <StyledWrapper>
       <Header />
       <Carousel executeScroll={executeScroll} />
-      <Services />
+      <Services executeScroll={executeScroll} />
       <Contact myRef={myRef} />
       <Footer />
     </StyledWrapper>
