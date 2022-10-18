@@ -5,9 +5,9 @@ import { colors, font } from "../../const"
 import { Form, Field } from "formik"
 
 export const StyledForm = styled(Form)`
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 720px) {
     height: 100%;
-    width: 100%;
+    width: auto;
   }
 
   height: 100%;
@@ -86,16 +86,16 @@ export const StyledButton = styled.button`
   outline: none;
   font-size: 16px;
   font-weight: 600;
-  border: 2px solid ${colors.dark};
+  border: 2px solid ${colors.seconday};
   border-radius: 4px;
   color: ${colors.light};
-  background-color: ${colors.dark};
+  background-color: ${colors.seconday};
   cursor: pointer;
   transition: all 0.3s ease;
 
   :hover {
-    border: 2px solid ${colors.primary};
-    background-color: ${colors.primary};
+    border: 2px solid ${colors.dark};
+    background-color: ${colors.dark};
     color: ${colors.light};
   }
 `
