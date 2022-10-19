@@ -2,7 +2,8 @@ import React, { useState } from "react"
 import {
   StyledHeader,
   StyledLogo,
-  StyledImage,
+  StyledIcon,
+  // StyledImage,
   StyledNavbarContainer,
   StyledMenuButtonContainer,
   StyledMenuButton,
@@ -22,7 +23,8 @@ function Header() {
     <>
       <StyledHeader>
         <StyledLogo onClick={handleCloseMenu} isOpenMenu={isOpenMenu}>
-          <StyledImage src="/assets/images/gt-logo.jpg" alt="logo" />
+          {/* <StyledImage src="/assets/images/gt-logo.jpg" alt="logo" /> */}
+          <StyledIcon className="fas fa-home"></StyledIcon>
         </StyledLogo>
         <StyledNavbarContainer>
           <Navbar />

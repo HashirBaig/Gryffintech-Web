@@ -16,6 +16,16 @@ export const StyledLogo = styled.div`
   font-weight: 800;
   font-size: 24px;
   margin-left: 20px;
+  padding: 8px;
+  border-radius: 50%;
+
+  :hover {
+    background-color: ${colors.lightOrange};
+    cursor: pointer;
+    & > i {
+      color: ${colors.seconday};
+    }
+  }
 
   ${({ isOpenMenu }) =>
     isOpenMenu
@@ -30,7 +40,14 @@ export const StyledImage = styled.img`
   width: 60px;
   height: auto;
   background: norepeat;
+  color: blue;
 `
+
+export const StyledIcon = styled.i`
+  color: ${colors.dark};
+  font-size: 34px;
+`
+
 export const StyledNavbarContainer = styled.div`
   @media screen and (max-width: 720px) {
     display: none;
