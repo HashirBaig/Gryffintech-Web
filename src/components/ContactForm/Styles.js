@@ -84,6 +84,7 @@ export const StyledButton = styled.button`
   outline: none;
   font-size: 16px;
   font-weight: 600;
+  margin-top: 15px;
   border: 2px solid ${colors.seconday};
   border-radius: 4px;
   color: ${colors.light};
