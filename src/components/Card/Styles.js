@@ -38,6 +38,10 @@ export const StyledIconContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 480px) {
+    display: ${({ id }) => (id === "read" ? "none" : "flex")};
+  }
 `
 export const StyledCardIcon = styled.i`
   @media screen and (max-width: 480px) {
