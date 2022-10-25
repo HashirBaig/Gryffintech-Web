@@ -5,7 +5,7 @@ export const StyledFooter = styled.div`
   position: relative;
   width: 100%;
   height: auto;
-  padding: 30px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
