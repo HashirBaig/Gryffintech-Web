@@ -12,7 +12,7 @@ export const StyledCard = styled.div`
   heigh: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: white;
   overflow: hidden;
   border-radius: 6px;
@@ -58,7 +58,7 @@ export const StyledCardIcon = styled.i`
 `
 export const StyledCardHeader = styled.h4`
   margin: 0 0;
-  height: 6vh;
+  height: 7vh;
   display: flex;
   align-items: center;
   justify-content: center;
