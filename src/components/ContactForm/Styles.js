@@ -1,9 +1,9 @@
 import styled from "styled-components"
-import { colors, font } from "../../const"
+import { colors, font, mediaQueries as media } from "../../const"
 import { Form, Field } from "formik"
 
 export const StyledForm = styled(Form)`
-  @media screen and (max-width: 720px) {
+  ${media.lap} {
     height: 100%;
     width: auto;
   }
@@ -22,7 +22,7 @@ export const StyledFormContainer = styled.div`
   text-align: left;
 `
 export const StyledNameContainer = styled.div`
-  @media screen and (max-width: 480px) {
+  ${media.palm} {
     display: block;
   }
 
