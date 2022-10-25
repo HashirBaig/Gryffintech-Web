@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { colors, font } from "../../../const"
+import { colors, font, mediaQueries as media } from "../../../const"
 
 export const StyledHeader = styled.div`
   position: sticky;
@@ -49,13 +49,13 @@ export const StyledIcon = styled.i`
 `
 
 export const StyledNavbarContainer = styled.div`
-  @media screen and (max-width: 720px) {
+  ${media.lap} {
     display: none;
   }
   display: block;
 `
 export const StyledMenuButtonContainer = styled.div`
-  @media screen and (max-width: 720px) {
+  ${media.lap} {
     display: flex;
   }
   position: relative;
@@ -83,7 +83,7 @@ export const StyledMenu = styled.div`
   z-index: 100;
   display: none;
 
-  @media screen and (max-width: 720px) {
+  ${media.lap} {
     display: flex;
   }
 `

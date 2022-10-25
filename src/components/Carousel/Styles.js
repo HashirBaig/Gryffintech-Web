@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { colors, font } from "../../const"
+import { colors, font, mediaQueries as media } from "../../const"
 
 export const StyledWrapper = styled.div`
   width: 100%;
@@ -9,7 +9,7 @@ export const StyledWrapper = styled.div`
   justify-content: space-around;
   padding: 60px 0px;
 
-  @media screen and (max-width: 720px) {
+  ${media.lap} {
     display: block;
   }
 `
@@ -21,7 +21,7 @@ export const StyledCarouselContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media screen and (max-width: 720px) {
+  ${media.lap} {
     width: auto;
   }
 `
@@ -37,7 +37,7 @@ export const StyledHeading = styled.h1`
   }
 `
 export const StyledParagrah = styled.p`
-  @media screen and (max-width: 720px) {
+  ${media.lap} {
     text-align: center;
   }
   font-size: 18px;
@@ -75,7 +75,7 @@ export const StyledBgImg = styled.img`
   margin-top: -150px;
   background-repeat: no-repeat;
 
-  @media screen and (max-width: 720px) {
+  ${media.lap} {
     display: none;
   }
 `
@@ -84,7 +84,7 @@ export const StyledGifContainer = styled.div`
   border-radius: 50%;
   padding: 15px;
 
-  @media screen and (max-width: 720px) {
+  ${media.lap} {
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { mediaQueries as media } from "../../const"
 
 export const StyledDropdown = styled.div`
   ${({ isMobileOrTabletView }) =>
@@ -15,7 +16,7 @@ export const StyledDropdown = styled.div`
   line-height: 25px;
   padding: 7px;
 
-  @media screen and (max-width: 720px) {
+  ${media.lap} {
     padding: 5px;
     margin: 5px;
     border: none;

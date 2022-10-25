@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { colors } from "../../const"
+import { colors, mediaQueries as media } from "../../const"
 
 export const StyledContainer = styled.div`
   display: flex;
@@ -7,7 +7,7 @@ export const StyledContainer = styled.div`
   justify-content: space-evenly;
   margin: 50px 0;
 
-  @media screen and (max-width: 720px) {
+  ${media.lap} {
     display: block;
   }
 `
@@ -47,7 +47,7 @@ export const StyledInfo = styled.div`
   color: ${colors.dark};
   gap: 30px;
 
-  @media screen and (max-width: 720px) {
+  ${media.lap} {
     display: block;
   }
 `
@@ -59,7 +59,7 @@ export const StyledGifContainer = styled.div`
   border-radius: 50%;
   padding: 15px;
 
-  @media screen and (max-width: 720px) {
+  ${media.lap} {
     text-align: center;
     border: none;
   }
@@ -69,6 +69,10 @@ export const StyledGif = styled.img`
   width: 340px;
   height: auto;
   border-radius: 50%;
+
+  ${media.palm} {
+    width: 310px;
+  }
 `
 
 export const StyledIconContainer = styled.div`

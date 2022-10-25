@@ -1,8 +1,8 @@
 import styled from "styled-components"
-import { colors } from "../../const"
+import { colors, mediaQueries as media } from "../../const"
 
 export const StyledNavbar = styled.div`
-  @media screen and (max-width: 720px) {
+  ${media.lap} {
     display: flex;
     flex-direction: column;
     margin-right: 0px;
@@ -16,7 +16,7 @@ export const StyledNavbar = styled.div`
   margin-right: 20px;
 `
 export const StyledNavItemContainer = styled.div`
-  @media screen and (max-width: 720px) {
+  ${media.lap} {
     width: 100%;
     display: block;
   }
@@ -37,7 +37,7 @@ export const StyledNavItem = styled.div`
     transition: all 0.3s ease;
   }
 
-  @media screen and (max-width: 720px) {
+  ${media.lap} {
     width: 100%;
     height: auto;
     justify-content: space-between;

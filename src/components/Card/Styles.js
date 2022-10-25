@@ -1,8 +1,8 @@
 import styled from "styled-components"
-import { colors, font } from "../../const"
+import { colors, font, mediaQueries as media } from "../../const"
 
 export const StyledCard = styled.div`
-  @media screen and (max-width: 480px) {
+  ${media.palm} {
     width: 140px;
     heigh: auto;
     text-align: center;
@@ -39,21 +39,23 @@ export const StyledIconContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media screen and (max-width: 480px) {
+  ${media.palm} {
     display: ${({ id }) => (id === "read" ? "none" : "flex")};
   }
 `
 export const StyledCardIcon = styled.i`
-  @media screen and (max-width: 480px) {
+  ${media.palm} {
     font-size: 24px;
   }
   font-size: 24px;
   padding: 8px;
   margin: 5px 0;
   border-radius: 50%;
+
   :hover {
     background-color: ${colors.light};
     cursor: pointer;
+    transition: all 0.3s ease;
   }
 `
 export const StyledCardHeader = styled.h4`
@@ -63,13 +65,13 @@ export const StyledCardHeader = styled.h4`
   align-items: center;
   justify-content: center;
 
-  @media screen and (max-width: 480px) {
+  ${media.palm} {
     font-size: ${font.size.md};
   }
 `
 export const StyledTextContainer = styled.div``
 export const StyledText = styled.p`
-  @media screen and (max-width: 480px) {
+  ${media.palm} {
     display: none;
   }
   text-align: left;
