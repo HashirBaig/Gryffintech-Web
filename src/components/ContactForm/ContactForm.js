@@ -1,8 +1,10 @@
-import React from "react"
+import React, { useState } from "react"
+import { Spinner } from "reactstrap"
 import { Formik } from "formik"
 import * as Yup from "yup"
 import { StyledForm, StyledNameContainer, StyledButton } from "./Styles"
 import FormikControl from "../FormikControl"
+import { sendMail } from "../../services/api"
 
 const schema = Yup.object({
   firstName: Yup.string().required("Required"),
@@ -13,6 +15,9 @@ const schema = Yup.object({
 })
 
 function ContactForm() {
+  const [isLoading, setIsLoading] = useState(false)
+  const initialValues = { firstName: "", lastName: "", email: "", service: "", message: "" }
+
   const validateEmail = value => {
     let error
     if (!value) {
@@ -24,11 +29,17 @@ function ContactForm() {
     return error
   }
 
-  const onSubmit = values => {
-    console.log("data: ", values)
+  const onSubmit = async (values, { resetForm }) => {
+    try {
+      setIsLoading(true)
+      await sendMail(values)
+      resetForm()
+    } catch (error) {
+      console.log(error)
+    } finally {
+      setIsLoading(false)
+    }
   }
-
-  const initialValues = { firstName: "", lastName: "", email: "", service: "", message: "" }
 
   return (
     <Formik initialValues={initialValues} validationSchema={schema} onSubmit={onSubmit}>
@@ -63,7 +74,7 @@ function ContactForm() {
           />
           <FormikControl control="select" id="service" name="service" label="Service" />
           <FormikControl control="textarea" name="message" label="Message" placeholder="Let us know your thoughts" />
-          <StyledButton type="submit">Send</StyledButton>
+          <StyledButton type="submit">Send {isLoading && <Spinner color="light" />}</StyledButton>
         </StyledForm>
       )}
     </Formik>
