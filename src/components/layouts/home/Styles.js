@@ -20,11 +20,7 @@ export const StyledLogo = styled.div`
   border-radius: 50%;
 
   :hover {
-    background-color: ${colors.lightOrange};
     cursor: pointer;
-    & > i {
-      color: ${colors.seconday};
-    }
   }
 
   ${({ isOpenMenu }) =>
@@ -37,7 +33,7 @@ export const StyledLogo = styled.div`
       : ``}
 `
 export const StyledImage = styled.img`
-  width: 60px;
+  width: 80px;
   height: auto;
   background: norepeat;
   color: blue;

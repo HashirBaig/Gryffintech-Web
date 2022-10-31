@@ -1,5 +1,4 @@
-import React, { useState } from "react"
-import { Spinner } from "reactstrap"
+import React from "react"
 import { Formik } from "formik"
 import * as Yup from "yup"
 import { StyledForm, StyledNameContainer, StyledButton } from "./Styles"
@@ -15,7 +14,6 @@ const schema = Yup.object({
 })
 
 function ContactForm() {
-  const [isLoading, setIsLoading] = useState(false)
   const initialValues = { firstName: "", lastName: "", email: "", service: "", message: "" }
 
   const validateEmail = value => {
@@ -31,13 +29,10 @@ function ContactForm() {
 
   const onSubmit = async (values, { resetForm }) => {
     try {
-      setIsLoading(true)
       await sendMail(values)
       resetForm()
     } catch (error) {
       console.log(error)
-    } finally {
-      setIsLoading(false)
     }
   }
 
@@ -74,7 +69,7 @@ function ContactForm() {
           />
           <FormikControl control="select" id="service" name="service" label="Service" />
           <FormikControl control="textarea" name="message" label="Message" placeholder="Let us know your thoughts" />
-          <StyledButton type="submit">Send {isLoading && <Spinner color="light" />}</StyledButton>
+          <StyledButton type="submit">Send</StyledButton>
         </StyledForm>
       )}
     </Formik>
