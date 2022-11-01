@@ -23,7 +23,7 @@ function Header() {
     <>
       <StyledHeader>
         <StyledLogo onClick={handleCloseMenu} isOpenMenu={isOpenMenu}>
-          <StyledImage src="/assets/images/gt-logo.png" alt="logo" />
+          <StyledImage src="/assets/images/gt-logo-2.png" alt="logo" />
         </StyledLogo>
         <StyledNavbarContainer>
           <Navbar />

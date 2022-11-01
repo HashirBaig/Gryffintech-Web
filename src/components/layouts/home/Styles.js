@@ -33,7 +33,7 @@ export const StyledLogo = styled.div`
       : ``}
 `
 export const StyledImage = styled.img`
-  width: 80px;
+  width: 150px;
   height: auto;
   background: norepeat;
   color: blue;
@@ -53,6 +53,7 @@ export const StyledNavbarContainer = styled.div`
 export const StyledMenuButtonContainer = styled.div`
   ${media.lap} {
     display: flex;
+    margin-right: 30px;
   }
   position: relative;
   display: none;
@@ -66,6 +67,7 @@ export const StyledMenuButton = styled.i`
   :hover {
     background-color: ${colors.light};
     color: ${colors.seconday};
+    transition: all 0.3s ease;
   }
 `
 export const StyledMenu = styled.div`
