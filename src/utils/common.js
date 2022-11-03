@@ -212,3 +212,27 @@ export const navMenu = [
   { label: "Contact", link: "/", tree: null },
   { label: "Career", link: "/", tree: null },
 ]
+
+export const clientQuotes = [
+  {
+    name: "Richard Sylwander",
+    quote:
+      "Our project was both complex and challenging, but Gryffintech's team has exceeded our expectations in terms of quality, speed and communication.",
+    company: "Foxrey",
+    designation: "CEO",
+  },
+  {
+    name: "Asad Jobanputra",
+    quote:
+      "I worked with Gryffintech team, and we had a speciality project on android to build a self-serve kiosk application.",
+    company: "Esprida Corp",
+    designation: "Director",
+  },
+  {
+    name: "Jeff Lunceford",
+    quote:
+      "I greatly appreciate the work that Gryffintech's team did for me. I would never be able to accomplish the development without their skills.",
+    company: "Landscapper LLC",
+    designation: "CEO",
+  },
+]

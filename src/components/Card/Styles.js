@@ -19,11 +19,11 @@ export const StyledCard = styled.div`
   background-color: ${colors.white};
   gap: 10px;
   padding: 0 10px;
+  transition: all 0.3s ease;
 
   :hover {
     filter: drop-shadow(0px 0px 6px ${colors.shadow});
     transform: scale(1);
-    transition: all 0.3s ease;
   }
 `
 
