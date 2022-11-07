@@ -30,10 +30,10 @@ export const StyledNavItem = styled.div`
   gap: 4px;
   cursor: pointer;
   font-weight: bold;
-  color: ${colors.darker};
+  color: ${colors.dark};
 
   :hover {
-    color: ${colors.seconday};
+    color: ${colors.primary};
     transition: all 0.3s ease;
   }
 

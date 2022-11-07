@@ -9,7 +9,7 @@ const dimensions = { width: "auto", height: "40px" }
 const style = {
   lineHeight: "normal",
   outline: "none",
-  border: `2px solid ${colors.border.primary}`,
+  border: `2px solid ${colors.dark}`,
   borderRadius: "4px",
   backgroundColor: "transparent",
   padding: "2px 10px",

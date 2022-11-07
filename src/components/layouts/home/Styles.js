@@ -1,15 +1,15 @@
 import styled from "styled-components"
-import { colors, font, mediaQueries as media } from "../../../const"
+import { colors, mediaQueries as media } from "../../../const"
 
 export const StyledHeader = styled.div`
-  position: sticky;
+  position: fixed;
   width: 100%;
   height: 74px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  box-shadow: 0 3px 8px ${colors.lightOrange};
+  box-shadow: 0 3px 8px ${colors.shadow};
   z-index: 10;
 `
 export const StyledLogo = styled.div`
@@ -59,14 +59,14 @@ export const StyledMenuButtonContainer = styled.div`
   display: none;
 `
 export const StyledMenuButton = styled.i`
-  font-size: ${font.size.icon.header};
+  font-size: 28px;
   cursor: pointer;
   padding: 5px;
   border-radius: 4px;
   color: ${colors.dark};
   :hover {
     background-color: ${colors.light};
-    color: ${colors.seconday};
+    color: ${colors.secondary};
     transition: all 0.3s ease;
   }
 `
@@ -76,10 +76,16 @@ export const StyledMenu = styled.div`
   right: -100vw;
   width: 100%;
   height: 100%;
-  background-color: ${colors.light};
+  background-color: ${colors.white};
   transition: 0.3s ease left;
-  z-index: 100;
+  z-index: 10;
   display: none;
+  overflow: hidden;
+  overflow-y: scroll;
+
+  ::-webkit-scrollbar {
+    width: 0;
+  }
 
   ${media.lap} {
     display: flex;
