@@ -8,5 +8,5 @@ export const StyledTreeChild = styled.div`
   margin-top: 5px;
   padding: 0px 10px;
   border-radius: 4px;
-  background-color: ${colors.lightOrange};
+  background-color: ${colors.light};
 `

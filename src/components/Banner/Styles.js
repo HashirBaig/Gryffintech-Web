@@ -7,22 +7,25 @@ export const StyledWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 60px 0px;
+  padding: 100px 0px 30px 0px;
 
   ${media.lap} {
     display: block;
   }
 `
-export const StyledCarouselContainer = styled.div`
-  width: 500px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+export const StyledContainer = styled.div`
+  max-width: 500px;
+  max-height: 500px;
+  text-align: left;
+  box-shadow: 4px 4px 4px ${colors.shadow};
+  color: ${colors.dark};
+  border-radius: 15px;
+  padding: 40px 10px;
+  overflow: hidden;
 
   ${media.lap} {
     width: auto;
+    text-align: center;
   }
 `
 
@@ -32,7 +35,7 @@ export const StyledHeading = styled.h1`
   font-weight: 800;
   color: ${colors.dark};
 
-  @media screen and (max-width: 530px) {
+  @media ${media.lap} {
     text-align: center;
   }
 `
@@ -41,26 +44,24 @@ export const StyledParagrah = styled.p`
     text-align: center;
   }
   font-size: 18px;
-  color: ${colors.dark};
+`
+
+export const StyledButtonContainer = styled.div`
+  height: auto;
+  width: 100%;
 `
 
 export const StyledButton = styled.button`
   outline: none;
   font-size: 16px;
   font-weight: 600;
-  padding: 10px 25px;
+  padding: 12px 30px;
   border: none;
   margin: 15px 0px;
-  border-radius: 4px;
-  color: ${colors.light};
-  background-color: ${colors.seconday};
+  color: ${colors.white};
+  background: linear-gradient(130deg, #5f4b8b, #e69a8d);
   cursor: pointer;
-
-  :hover {
-    background-color: ${colors.darker};
-    color: ${colors.light};
-    transition: all 0.3s ease;
-  }
+  transition: all 0.3s ease;
 `
 export const StyledIcon = styled.i`
   font-size: ${font.size.icon};
@@ -80,10 +81,6 @@ export const StyledBgImg = styled.img`
   }
 `
 export const StyledGifContainer = styled.div`
-  border: 4px dotted ${colors.darker};
-  border-radius: 50%;
-  padding: 15px;
-
   ${media.lap} {
     display: flex;
     align-items: center;
@@ -93,7 +90,6 @@ export const StyledGifContainer = styled.div`
 `
 export const StyledGif = styled.img`
   position: relative;
-  width: 300px;
+  width: 400px;
   height: auto;
-  border-radius: 50%;
 `

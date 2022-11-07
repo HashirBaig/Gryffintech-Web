@@ -9,7 +9,7 @@ export const StyledInput = styled.div`
 `
 
 export const StyledLabel = styled.label`
-  color: ${colors.font.dark};
+  color: ${colors.dark};
   font-weight: 700;
 `
 export const StyledField = styled(Field)`
@@ -17,7 +17,7 @@ export const StyledField = styled(Field)`
   height: 40px;
   line-height: normal;
   outline: none;
-  border: 2px solid ${colors.border.primary};
+  border: 2px solid ${colors.secondary};
   border-radius: 4px;
   background-color: transparent;
   padding: 2px 10px;
@@ -33,7 +33,7 @@ export const StyledSelect = styled.select`
   height: 40px;
   line-height: normal;
   outline: none;
-  border: 2px solid ${colors.border.primary};
+  border: 2px solid ${colors.secondary};
   border-radius: 4px;
   background-color: transparent;
   padding: 2px 10px;
@@ -42,7 +42,7 @@ export const StyledSelect = styled.select`
 export const StyledErrorMessage = styled.p`
   font-size: 12px;
   font-weight: 600;
-  color: ${colors.message.error};
+  color: ${colors.danger};
   transition: 0.2s ease-out all;
   margin: 0px;
   padding: 0px;

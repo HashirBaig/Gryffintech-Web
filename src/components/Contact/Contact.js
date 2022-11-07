@@ -7,10 +7,6 @@ import {
   StyledText,
   StyledGifContainer,
   StyledGif,
-  StyledInfoContainer,
-  StyledIconContainer,
-  StyledIcon,
-  StyledInfo,
 } from "./Styles"
 
 import ContactForm from "../ContactForm"
@@ -22,37 +18,11 @@ function Contact({ myRef }) {
       <StyledText>We would love to hear about your project</StyledText>
       <StyledContainer>
         <ContactForm />
-        <StyledInfoContainer>
-          <Fade right cascade>
-            <StyledGifContainer>
-              <StyledGif src="/assets/gifs/contact_us_gif.gif" />
-            </StyledGifContainer>
-          </Fade>
-          <StyledInfo>
-            <Fade right cascade>
-              <StyledIconContainer>
-                <StyledIcon className="fas fa-phone"></StyledIcon>
-              </StyledIconContainer>
-              <StyledText>051-2344526</StyledText>
-            </Fade>
-          </StyledInfo>
-          <StyledInfo>
-            <Fade right cascade>
-              <StyledIconContainer>
-                <StyledIcon className="fas fa-map-marker-alt"></StyledIcon>
-              </StyledIconContainer>
-              <StyledText>Razia Sharif Plaza, Blue Area, Islamabad</StyledText>
-            </Fade>
-          </StyledInfo>
-          <StyledInfo>
-            <Fade right cascade>
-              <StyledIconContainer>
-                <StyledIcon className="fab fa-twitter"></StyledIcon>
-              </StyledIconContainer>
-              <StyledText>@Gryffintech</StyledText>
-            </Fade>
-          </StyledInfo>
-        </StyledInfoContainer>
+        <Fade right cascade>
+          <StyledGifContainer>
+            <StyledGif src="/assets/svgs/emails_amico.svg" />
+          </StyledGifContainer>
+        </Fade>
       </StyledContainer>
     </StyledWrapper>
   )

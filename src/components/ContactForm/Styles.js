@@ -14,7 +14,7 @@ export const StyledForm = styled(Form)`
   background-color: white;
   border-radius: 4px;
   line-height: 37px;
-  filter: drop-shadow(0px 0px 10px ${colors.shadow});
+  box-shadow: 4px 4px 4px ${colors.shadow};
 `
 export const StyledFormContainer = styled.div`
   display: flex;
@@ -40,7 +40,7 @@ export const StyledLastNameContainer = styled.div`
 `
 
 export const StyledLabel = styled.label`
-  color: ${colors.font.dark};
+  color: ${colors.dark};
   font-weight: 700;
 `
 export const StyledField = styled(Field)`
@@ -48,7 +48,7 @@ export const StyledField = styled(Field)`
   height: 40px;
   line-height: normal;
   outline: none;
-  border: 2px solid ${colors.border.primary};
+  border: 2px solid ${colors.dark};
   border-radius: 4px;
   background-color: transparent;
   padding: 2px 10px;
@@ -60,7 +60,7 @@ export const StyledSelect = styled.select`
   height: 45px;
   line-height: normal;
   outline: none;
-  border: 2px solid ${colors.border.primary};
+  border: 2px solid ${colors.dark};
   border-radius: 4px;
   background-color: inherit;
   color: ${colors.dark};
@@ -82,26 +82,19 @@ export const StyledButton = styled.button`
   width: 100%;
   height: 40px;
   outline: none;
+  border: none;
   font-size: 16px;
   font-weight: 600;
   margin-top: 15px;
-  border: 2px solid ${colors.seconday};
-  border-radius: 4px;
-  color: ${colors.light};
-  background-color: ${colors.seconday};
+  color: ${colors.white};
+  background: linear-gradient(130deg, #5f4b8b, #e69a8d);
   cursor: pointer;
   transition: all 0.3s ease;
-
-  :hover {
-    border: 2px solid ${colors.dark};
-    background-color: ${colors.dark};
-    color: ${colors.light};
-  }
 `
 export const StyledErrorMessage = styled.p`
   font-size: 12px;
   font-weight: 600;
-  color: ${colors.message.error};
+  color: ${colors.danger};
   transition: 0.2s ease-out all;
   margin: 0px;
   padding: 0px;

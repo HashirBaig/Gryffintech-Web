@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components/macro"
+import { colors } from "../const"
 
 export const StyledApp = styled.div`
   width: 100%;
@@ -15,6 +16,6 @@ export const RebootStyles = createGlobalStyle`
     margin: 0;
     font-family: "Helvetica", sans-sarif;
     text-decoration: none;
-    background-color: #f6f6f6;
+    background-color: ${colors.white};
   }
 `
