@@ -16,9 +16,12 @@ export const StyledHeaderContainer = styled.div`
 export const StyledHeader = styled.h1`
   height: auto;
   width: 250px;
+  display: flex;
+  gap: 10px;
   padding: 0px 0px;
   margin: 0px 0px;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
 `
 export const StyledHeaderSpan = styled.span`
   background: -webkit-linear-gradient(130deg, #5f4b8b, #e69a8d);
