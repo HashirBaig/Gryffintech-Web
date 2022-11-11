@@ -1,5 +1,6 @@
 import React from "react"
 import Marquee from "react-fast-marquee"
+import Tada from "react-reveal/Tada"
 import {
   StyledCarousel,
   StyledHeaderContainer,
@@ -16,7 +17,10 @@ function Carousel() {
     <StyledCarousel>
       <StyledHeaderContainer>
         <StyledHeader>
-          <StyledHeaderSpan>500+</StyledHeaderSpan> Clients
+          <Tada>
+            <StyledHeaderSpan>500+</StyledHeaderSpan>
+          </Tada>
+          Clients
         </StyledHeader>
         <StyledHeader>Trusted On Us</StyledHeader>
       </StyledHeaderContainer>
