@@ -14,13 +14,13 @@ export const StyledWrapper = styled.div`
   }
 `
 export const StyledContainer = styled.div`
-  max-width: 500px;
+  max-width: 450px;
   max-height: 500px;
   text-align: left;
   box-shadow: 4px 4px 4px ${colors.shadow};
   color: ${colors.dark};
   border-radius: 15px;
-  padding: 40px 10px;
+  padding: 40px 30px;
   overflow: hidden;
 
   ${media.lap} {
@@ -32,7 +32,7 @@ export const StyledContainer = styled.div`
 export const StyledHeading = styled.h1`
   margin-bottom: 0px;
   font-size: ${font.size.xxxl};
-  font-weight: 800;
+  font-weight: 600;
   color: ${colors.dark};
 
   @media ${media.lap} {
