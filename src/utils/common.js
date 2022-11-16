@@ -3,7 +3,7 @@ export const services = [
     label: "Artifical Intelligence",
     value: "artificialIntelligence",
     icon: "fas fa-head-side-virus",
-    src: "/assets/images/ai/ai_img_1.jpg",
+    src: "/assets/svgs/services/ai.svg",
     description:
       "Buld impactful AI/ML solutions to leverage smart analytics and intelligent buisness insights to enhance buisness operations",
     link: "/",
@@ -13,7 +13,7 @@ export const services = [
     label: "IoT Solution Development",
     value: "iotSolutionDevelopment",
     icon: "fas fa-network-wired",
-    src: "/assets/images/iot/iot_img_2.jpg",
+    src: "/assets/svgs/services/iot.svg",
     description:
       "Build secure IoT and IIoT for your enterprise delivered with benefits of less time to market and high efficiency",
     link: "/",
@@ -23,7 +23,7 @@ export const services = [
     label: "Enterprise Development",
     value: "enterpriseDevelopment",
     icon: "fas fa-handshake",
-    src: "/assets/images/enterprise/enterprise_img_1.jpg",
+    src: "/assets/svgs/services/enterprise-dev.svg",
     description: "Result-oriented enterprise development that fuel growth and enhance organizational productivity",
     link: null,
     branches: [
@@ -39,7 +39,7 @@ export const services = [
     label: "Cloud Services",
     value: "cloudServices",
     icon: "fas fa-cloud",
-    src: "/assets/images/cloud/cloud_img_2.jpg",
+    src: "/assets/svgs/services/cloud-1.svg",
     description:
       "Our machine learning and data science practices have helped companies build custom solutions to improve business realities",
     link: "/",
@@ -49,7 +49,7 @@ export const services = [
     label: "Mobile App Development",
     value: "mobileAppDevelopment",
     icon: "fas fa-mobile",
-    src: "/assets/images/mobile/mobile_img_2.png",
+    src: "/assets/svgs/services/mobile-dev.svg",
     description:
       "Mobile application development that offer flawless execution across devices and are tailor-made for user-facing and corporate environment",
     link: null,
@@ -67,7 +67,7 @@ export const services = [
     label: "Web App Development",
     value: "webAppDevelopment",
     icon: "fas fa-laptop-code",
-    src: "/assets/images/web/web_img_2.jpg",
+    src: "/assets/svgs/services/web-dev.svg",
     theme: "#D1FFF1",
     border: "#01594B",
     description:
@@ -88,7 +88,7 @@ export const services = [
     label: "Manage Services",
     value: "manageServices",
     icon: "fas fa-users-cog",
-    src: "/assets/images/manage-services/ms_img_1.jpg",
+    src: "/assets/svgs/services/manage-services.svg",
     description: "Improve operations and cut the expenses with experts of our team constantly there to help you out",
     link: null,
     branches: [
@@ -101,7 +101,7 @@ export const services = [
     label: "Staff Augmentation",
     value: "staffAugmentation",
     icon: "fas fa-users",
-    src: "/assets/images/staff-augmentation/sa_img_1.jpg",
+    src: "/assets/svgs/services/staff-augmentation.svg",
     description:
       "Extend your development team with staff augmentation services that align with your project requirements and won't put a burden on your budget",
     link: "/",
@@ -111,7 +111,7 @@ export const services = [
     label: "Embedded Software Dev",
     value: "embeddedSoftwareDevelopment",
     icon: "fas fa-microchip",
-    src: "/assets/images/embedded-software-solutions/ess_img_1.jpg",
+    src: "/assets/svgs/services/embedded-software-dev.svg",
     description:
       "Advanced embedded solutions for buisnesses to leverage their connected resources and make the best of them",
     link: "/",
@@ -121,7 +121,7 @@ export const services = [
     label: "Blockchain Development",
     value: "blockchainDevelopment",
     icon: "fab fa-hive",
-    src: "/assets/images/blockchain/b_img_1.jpg",
+    src: "/assets/svgs/services/blockchain.svg",
     description:
       "Blockchain development services enhance the capabilities of buisness applications with a variety of tools and technologies for developing secured solutions",
     link: "/",
