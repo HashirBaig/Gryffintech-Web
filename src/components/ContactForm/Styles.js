@@ -81,6 +81,10 @@ export const StyledButtonContainer = styled.div`
 export const StyledButton = styled.button`
   width: 100%;
   height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   outline: none;
   border: none;
   font-size: 16px;
